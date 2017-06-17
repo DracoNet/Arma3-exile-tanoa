@@ -9,40 +9,40 @@ class Exile_Trader_Armory
 	{
 		"PointerAttachments",
 		"APEXBipodAttachments",
-		"RHSPointerAttachments",
+		//"RHSPointerAttachments",
 		"BipodAttachments",
-		"RHSBipodAttachments",
+		//"RHSBipodAttachments",
 		"APEXMuzzleAttachments",
-		"RHSMuzzleAttachments",
-		"CUPMuzzleAttachments",
+		//"RHSMuzzleAttachments",
+		//"CUPMuzzleAttachments",
 		"MuzzleAttachments",
-		"CUPOpticAttachments",
+		//"CUPOpticAttachments",
 		"OpticAttachments",
 		"APEXOpticAttachments",
-		"RHSOpticAttachments",
+		//"RHSOpticAttachments",
 		"Ammunition",
 		"APEXAmmunition",
-		"RHSAmmunition",
-		"CUPAmmunition",
+		//"RHSAmmunition",
+		//"CUPAmmunition",
 		"Pistols",
-		"RHSPistols",
-		"CUPPistols",
+		//"RHSPistols",
+		//"CUPPistols",
 		"Shotguns",
 		"SubMachineGuns",
 		"APEXSubMachineGuns",
-		"CUPSubMachineGuns",
+		//"CUPSubMachineGuns",
 		"LightMachineGuns",
 		"APEXLightMachineGuns",
-		"RHSLightMachineGuns",
-		"CUPLightMachineGuns",
+		//"RHSLightMachineGuns",
+		//"CUPLightMachineGuns",
 		"AssaultRifles",
 		"APEXAssaultRifles",
-		"RHSAssaultRifles",
-		"CUPAssaultRifles",
+		//"RHSAssaultRifles",
+		//"CUPAssaultRifles",
 		"SniperRifles",
-		"APEXSniperRifles",
-		"RHSSniperRifles",
-		"CUPSniperRifles"
+		"APEXSniperRifles"
+		//"RHSSniperRifles",
+		//"CUPSniperRifles"
 	};
 };
 
@@ -61,11 +61,11 @@ class Exile_Trader_SpecialOperations
 		"UAVs",
 		"StaticMGs",
 		"Explosives",
-		"CUPGrenadeLaunchers",
-		"CUPLaunchers",
-		"CUPAmmoForExplosives",
-		"Navigation",
-		"RHSMines"
+		//"CUPGrenadeLaunchers",
+		//"CUPLaunchers",
+		//"CUPAmmoForExplosives",
+		"Navigation"
+		//"RHSMines"
 	};
 };
 
@@ -80,17 +80,17 @@ class Exile_Trader_Equipment
 	{
 		"Headgear",
 		"APEXHeadgear",
-		"RHSHeadgear",
-		"CUPHeadgear",
+		//"RHSHeadgear",
+		//"CUPHeadgear",
 		"Glasses",
 		"Uniforms",
 		"APEXUniforms",
-		"RHSUniforms",
-		"CUPUniforms",
+		//"RHSUniforms",
+		//"CUPUniforms",
 		"Vests",
 		"APEXVests",
-		"RHSVests",
-		"CUPVests",
+		//"RHSVests",
+		//"CUPVests",
 		"Backpacks",
 		"APEXBackpacks",
 		"FirstAid"
@@ -136,10 +136,10 @@ class Exile_Trader_Vehicle
 	categories[] = 
 	{
 		"Cars",
-		"Trucks",
-		"RHSVehicles",
-		"CUPVehicles",
-		"CUPTracked"
+		"Trucks"
+		//"RHSVehicles",
+		//"CUPVehicles",
+		//"CUPTracked"
 		//"MVP"
 	};
 };
@@ -154,11 +154,11 @@ class Exile_Trader_Aircraft
 	categories[] = 
 	{
 		"Choppers", 
-		"RHSChoppers",
-		"CUPChoppers",
-		"Planes",
-		"RHSPlanes",
-		"CUPPlanes"
+		//"RHSChoppers",
+		//"CUPChoppers",
+		"Planes"
+		//"RHSPlanes",
+		//"CUPPlanes"
 	};
 };
 
@@ -171,8 +171,8 @@ class Exile_Trader_Boat
 	showWeaponFilter = 0;
 	categories[] = 
 	{
-		"Boats",
-		"CUPBoats"
+		"Boats"
+		//"CUPBoats"
 	};
 };
 

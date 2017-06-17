@@ -1,5 +1,5 @@
 # Arma3-exile-tanoa
-## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.0.0-lightgrey.svg?style=plastic)
+## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.0.0b-lightgrey.svg?style=plastic)
 
 
 #####Mods needed

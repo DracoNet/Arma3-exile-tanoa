@@ -1,3 +1,6 @@
+#define true 1
+#define false 0
+
 ///////////////////////////////////////////////////////////////////////////////
 // Server Settings - Modify at will
 ///////////////////////////////////////////////////////////////////////////////
@@ -67,7 +70,7 @@ showHUD[] =
 
 #include "config.cpp"
 #include "CfgRemoteExec.hpp"
-#include "infiSTAR_AdminMenu.hpp"
+//#include "infiSTAR_AdminMenu.hpp"
 // scarCODE ServerInfoMenu
 #include "scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
 #include "scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
