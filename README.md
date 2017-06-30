@@ -28,7 +28,21 @@
 
 #####Edit @ExileServer\config.cfg
 ```
-...
+allowedVoteCmds[] = {}; //No Voteing allowed
+
+class Missions
+{
+	class Exile
+	{
+
+		template = Exile.Tanoa;  // Exile.Namalsk, Exile.Altis
+		
+		// do NOT use custom difficulties!
+		// Use either ExileRegular or ExileHardcore
+		// or you will break Exile!
+		difficulty = "ExileRegular";
+	}; 
+};
 ```
 
 ##### PBO  files
@@ -46,5 +60,5 @@ Run the following sql command in you database.
 ```
 
 ##### infiSTAR (if installed)
-
-* If you are using infiSTAR and want to keep ```CGM = true;```, then set ```UMW = true;```. * Add ```'O_HMG_01_high_F'``` to ```_VehicleWhiteList```, as well as any other vehicles you add to DMS that are not whitelisted.
+* If you are using infiSTAR and want to keep ```CGM = true;```, then set ```UMW = true;```.
+* Add ```'O_HMG_01_high_F'``` to ```_VehicleWhiteList```, as well as any other vehicles you add to DMS that are not whitelisted.
