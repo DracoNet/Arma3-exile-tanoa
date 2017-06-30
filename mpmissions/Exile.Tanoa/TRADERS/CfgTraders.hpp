@@ -93,7 +93,8 @@ class Exile_Trader_Equipment
 		//"CUPVests",
 		"Backpacks",
 		"APEXBackpacks",
-		"FirstAid"
+		"FirstAid",
+		"RZInfection"
 	};
 };
 

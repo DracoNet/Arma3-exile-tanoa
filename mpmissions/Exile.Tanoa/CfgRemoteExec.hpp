@@ -6,7 +6,6 @@ class CfgRemoteExec
 		jip = 0;
 		class fnc_AdminReq { allowedTargets=2; };
 		class ExileServer_system_network_dispatchIncomingMessage { allowedTargets=2; };
-		class ExAdServer_fnc_clientRequest { allowedTargets=2; };
 	};
 	class Commands
 	{

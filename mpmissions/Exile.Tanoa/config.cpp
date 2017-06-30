@@ -1645,6 +1645,16 @@ class CfgExileCustomCode
 
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
+	
+	//Removes player marker
+	//ExileClient_gui_map_event_onDraw = "fixes\ExileClient_gui_map_event_onDraw.sqf";
+	
+	ExileClient_object_item_craft = "fixes\ExileClient_object_item_craft.sqf";
+	//RZ Infection Addon ADD THESE LINES :)
+	ExileClient_object_item_consume = "Overrides\ExileClient_object_item_consume.sqf";
+	
+	
+	
 };
 class CfgExileEnvironment
 {

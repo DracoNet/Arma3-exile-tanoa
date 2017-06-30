@@ -22,7 +22,13 @@ class EditorData
 		aside[] = {0.9992851,-4.8790753e-008,0.039012156};
 	};
 };
-addons[] = {"exile_client","A3_Ui_F"};
+addons[] = {
+	"exile_client",
+	"A3_Ui_F",
+	"Ryanzombies",
+	"ryanzombiesfunctions",
+	"A3_Characters_F"
+};
 class AddonsMetaData
 {
 	class List

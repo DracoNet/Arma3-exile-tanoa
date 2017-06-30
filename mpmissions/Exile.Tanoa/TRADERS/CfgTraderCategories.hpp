@@ -5,8 +5,8 @@ class CfgTraderCategories
 	#include "APEX\TraderCategories.hpp"
 	#include "RubberDuckGaming\TraderCategories.hpp"
 	// MODS Traders
+	#include "RZInfection\TraderCategories.hpp"
 	//#include "HVP\TraderCategories.hpp"
-	//#include "RZInfection\TraderCategories.hpp"
 	//#include "RHSV\TraderCategories.hpp"
 	//#include "RHSW\TraderCategories.hpp"
 	//#include "CUPV\TraderCategories.hpp"

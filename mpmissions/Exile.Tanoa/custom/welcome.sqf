@@ -24,11 +24,11 @@ _posDefault     = [0.3,0.55,0.5]; // Defualt Positions of all Credits
 
 // First
 _title          = format ["Welcome %1",name player];
-_shorttext      = "To Rubber Duck Gaming";
+_shorttext      = "To DracoNet";
 _posText        = [0.8,0.5,0.4];
 
 _title2         = "Website";
-_shorttext2     = "www.draconet.net/RD";
+_shorttext2     = "www.draconet.net";
 _posText2        = [0.8,0.5,0.25];
 
 _title3            = "Teamspeak 3";
@@ -48,7 +48,7 @@ _shorttext6     = "Admins are Always Active";
 _posText6       = [0.8,0.5,0.4];
 
 _title7        = "Thanks to";
-_shorttext7    = "DracoNet<br />GTX-Gaming<br />and All our players";
+_shorttext7    = "DracoNet<br />and All our players";
 _posText7       = [0.8,0.5,0.335];
 
 
