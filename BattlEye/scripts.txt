@@ -1,0 +1,2 @@
+7 exec !="(_this select 0) execVM \"\A3\Structures_F\Wrecks\Scripts\Wreck_Heli_Attack_01.sqf\""
+7 createVehicle !="_v)} do {\n_posV = getPos _v;\n_smoke1 = \"#particlesource\" createVehicleLocal getpos _v;\n_smoke1 attachTo [_v,[0,0,0],\"engine_effe"

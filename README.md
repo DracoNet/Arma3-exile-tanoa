@@ -1,5 +1,5 @@
 # Arma3-exile-tanoa
-## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.0.0b-lightgrey.svg?style=plastic)
+## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.0.1-lightgrey.svg?style=plastic)
 
 
 #####Mods needed
@@ -9,6 +9,9 @@
 
 #####Script used
 
+* [Defent/DMS_Exile](https://github.com/Defent/DMS_Exile)
+* [CRE4MPIE/StatusBar](https://github.com/CRE4MPIE/StatusBar)
+* [IT07/ArmA3_exile_ServerInfoMenu](https://github.com/IT07/ArmA3_exile_ServerInfoMenu)
 * Draco Custom!!!
 
 ###Installing
@@ -44,3 +47,4 @@ Run the following sql command in you database.
 
 ##### infiSTAR (if installed)
 
+* If you are using infiSTAR and want to keep ```CGM = true;```, then set ```UMW = true;```. * Add ```'O_HMG_01_high_F'``` to ```_VehicleWhiteList```, as well as any other vehicles you add to DMS that are not whitelisted.
