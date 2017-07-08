@@ -1313,8 +1313,8 @@ class Exile_Car_QilinUnarmed							{ quality = 3; price = 21000; };
 ///////////////////////////////////////////////////////////////////////////////
 // MB 4WD
 ///////////////////////////////////////////////////////////////////////////////
-class Exile_Car_MB4WD							{ quality = 2; price = 15000; };
-class Exile_Car_MB4WDOpen							{ quality = 2; price = 15000; };
+class Exile_Car_MB4WD							{ quality = 2; price = 15000; sellPrice = 7000; };
+class Exile_Car_MB4WDOpen							{ quality = 2; price = 15000; sellPrice = 7000; };
 
 ///////////////////////////////////////////////////////////////////////////////
 // Flags

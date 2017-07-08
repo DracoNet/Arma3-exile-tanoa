@@ -32,8 +32,7 @@
 	Returns AI Object
 */
 // Enabling this ensures that any optic/bipod/accessory that isn't compatible with a weapon cannot be selected. (Doesn't apply to custom gear sets)
-// Disabled for now because BIS loves to break things all the time.
-//#define USE_EXTRA_CHECKING 1
+#define USE_EXTRA_CHECKING 1
 
 private _customGearSet = [];
 

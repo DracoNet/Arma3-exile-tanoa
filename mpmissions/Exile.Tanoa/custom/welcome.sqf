@@ -3,7 +3,7 @@ if(isDedicated) exitWith {};
 _sizeTitle      = 0.55; // Font Size of the Title Messages
 _sizeSubText    = 0.45;  // Font Size of the SubTitle Messages
 _colorTitle     = "#0969ee"; // HTML Color Code of the Title Messages (must start with '#' )
-//_colorSubText = "#1cee09"; // HTML Color Code of the SubTitle Messages (must start with '#' )
+_colorSubText	= "#1cee09"; // HTML Color Code of the SubTitle Messages (must start with '#' )
 _colorSubText   = "#FFFFFF"; // HTML Color Code of the SubTitle Messages (must start with '#' )
 _alignTitle     = "left"; // Alignment of the Title Message (right or left)
 _alignSubText   = "right"; // Alignment of the SubTitle Message (right or left)
@@ -29,26 +29,26 @@ _posText        = [0.8,0.5,0.4];
 
 _title2         = "Website";
 _shorttext2     = "www.draconet.net";
-_posText2        = [0.8,0.5,0.25];
+_posText2       = [0.8,0.5,0.25];
 
-_title3            = "Teamspeak 3";
+_title3         = "Teamspeak 3";
 _shorttext3     = "ts.draconet.net";
-_posText3        = [0.8,0.5,0.25];
+_posText3       = [0.8,0.5,0.25];
 
 _title4         = "Donate";
 _shorttext4     = "Support the server and Help it stay up";
-_posText4        = [0.8,0.5,0.28];
+_posText4       = [0.8,0.5,0.28];
 
 _title5	        = "Custom Scripts";
 _shorttext5     = "AI Missions<br />Custom Traders<br />Status Bar";
 _posText5       = [0.8,0.5,0.335];
 
 _title6         = "Play Fair And Enjoy";
-_shorttext6     = "Admins are Always Active";
+_shorttext6     = "A Good Game Of ARMA 3 Exile";
 _posText6       = [0.8,0.5,0.4];
 
-_title7        = "Thanks to";
-_shorttext7    = "DracoNet<br />and All our players";
+_title7         = "Thanks to";
+_shorttext7     = "DracoNet for helping with Server Scripts<br />and of course All Our Players";
 _posText7       = [0.8,0.5,0.335];
 
 

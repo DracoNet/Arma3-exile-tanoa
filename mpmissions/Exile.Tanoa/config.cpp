@@ -1645,16 +1645,6 @@ class CfgExileCustomCode
 
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
-	
-	//Removes player marker
-	//ExileClient_gui_map_event_onDraw = "fixes\ExileClient_gui_map_event_onDraw.sqf";
-	
-	ExileClient_object_item_craft = "fixes\ExileClient_object_item_craft.sqf";
-	//RZ Infection Addon ADD THESE LINES :)
-	ExileClient_object_item_consume = "Overrides\ExileClient_object_item_consume.sqf";
-	
-	
-	
 };
 class CfgExileEnvironment
 {
@@ -2697,7 +2687,7 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 1000000;
+	maxDeposit = 99999;
 };
 
 class CfgPlayer 
@@ -2818,25 +2808,22 @@ class CfgTerritories
 	 * Defines the minimum distance to safe zones / trader cities where players
 	 * cannot build territories
 	 */
-	minimumDistanceToTraderZones = 1000;
+	minimumDistanceToTraderZones = 500;
 
 	/**
 	 * Defines the minimum distance to spawn zones where players
 	 * cannot build territories
 	 */
-	minimumDistanceToSpawnZones = 1000;
+	minimumDistanceToSpawnZones = 800;
 
 	// Amount of pop tabs per object to pay
 	popTabAmountPerObject = 10;
 };
-
 #include "TRADERS\CfgTraderCategories.hpp"
-
 class CfgTraders
 {
 	#include "TRADERS\CfgTraders.hpp"
 };
-
 class CfgTrading 
 {
 	/*
@@ -2851,11 +2838,11 @@ class CfgTrading
 	class requiredRespect 
 	{
 		Level1 = 0;
-		Level2 = 5000;
-		Level3 = 10000;
-		Level4 = 15000;
-		Level5 = 20000;
-		Level6 = 25000;
+		Level2 = 6000;
+		Level3 = 12000;
+		Level4 = 17000;
+		Level5 = 23000;
+		Level6 = 30000;
 	};
 };
 class CfgVehicleCustoms
@@ -3666,8 +3653,25 @@ class CfgVehicleTransport
 {
 	class Exile_Container_SupplyBox
 	{
-		vehicles[] = {"Exile_Car_Van_Abstract", "Exile_Car_Offroad_Abstract", "Exile_Car_Zamak_Abstract", "Exile_Car_HEMMT_Abstract", "Exile_Car_Tempest_Abstract"};
-
+		vehicles[] = {
+			"Exile_Car_Van_Abstract", 
+			"Exile_Car_Offroad_Abstract", 
+			"Exile_Car_Zamak_Abstract", 
+			"Exile_Car_HEMMT_Abstract", 
+			"Exile_Car_Tempest_Abstract", 
+			"Exile_Boat_RHIB_Abstract", // Added: this is necessary
+			"Exile_Boat_RHIB", // Added: not sure if necessary    
+			"Exile_Boat_Rubberboat_Abstract", // Added: this is necessary
+      		"Exile_Boat_RubberDuck_CSAT", // Added: not sure if necessary     
+        	"Exile_Boat_RubberDuck_Digital", // Added: not sure if necessary     
+        	"Exile_Boat_RubberDuck_Orange", // Added: not sure if necessary     
+        	"Exile_Boat_RubberDuck_Blue", // Added: not sure if necessary     
+        	"Exile_Boat_RubberDuck_Black", // Added: not sure if necessary 
+			"Exile_Boat_SDV_Abstract", // Added: this is necessary   
+      		"Exile_Boat_SDV_CSAT", // Added: not sure if necessary     
+        	"Exile_Boat_SDV_Digital", // Added: not sure if necessary     
+        	"Exile_Boat_SDV_Grey" // Added: not sure if necessary  
+     		};
 		class Exile_Car_Van_Abstract
 		{
 			attachPosition[] = {0, -1.1, 0.2};
@@ -3702,5 +3706,40 @@ class CfgVehicleTransport
 			cargoIndizes[] = {1, 6, 7, 9}; 
 			detachPosition[] = {0.08, -6};
 		};
+		
+		// Added: Contains positioning for supply boxes loaded in RHIB.
+		class Exile_Boat_RHIB_Abstract   
+		{  
+			attachPosition[] = {0, 1.5, 0.4};  
+			cargoIndizes[] = {1, 2, 3, 4};   
+			detachPosition[] = {0, 5};  
+		};  
+ 
+		// Added: Contains positioning for supply boxes loaded in Rubber Boats.
+		class Exile_Boat_Rubberboat_Abstract   
+		{  
+			attachPosition[] = {0, 0.5, 0.25};  
+			cargoIndizes[] = {1, 2, 3, 4};   
+			detachPosition[] = {0, 6};  
+		};  
+ 
+		// Added: Contains positioning for supply boxes loaded in SDV.
+		class Exile_Boat_SDV_Abstract   
+		{  
+			attachPosition[] = {0, -1, 0.5};  
+			cargoIndizes[] = {1, 2, 3, 4};   
+			detachPosition[] = {0, 8};  
+		};
+
+		// Added: Applies positioning defined above to specific vehicles.
+		class Exile_Boat_RHIB: Exile_Boat_RHIB_Abstract {};  
+		class Exile_Boat_RubberDuck_CSAT: Exile_Boat_Rubberboat_Abstract {};  
+		class Exile_Boat_RubberDuck_Digital: Exile_Boat_Rubberboat_Abstract {};  
+		class Exile_Boat_RubberDuck_Orange: Exile_Boat_Rubberboat_Abstract {};  
+		class Exile_Boat_RubberDuck_Blue: Exile_Boat_Rubberboat_Abstract {};  
+		class Exile_Boat_RubberDuck_Black: Exile_Boat_Rubberboat_Abstract {};  
+		class Exile_Boat_SDV_CSAT: Exile_Boat_SDV_Abstract {};  
+		class Exile_Boat_SDV_Digital: Exile_Boat_SDV_Abstract {};  
+		class Exile_Boat_SDV_Grey: Exile_Boat_SDV_Abstract {};  
 	};
 };

@@ -1,0 +1,2 @@
+//regex
+7 "" !="HubSittingChairC_idle1" !="aur_animation_move" !"aur_" !"ar_" !"atrain_"

@@ -1,5 +1,5 @@
 # Arma3-exile-tanoa
-## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.0.2-lightgrey.svg?style=plastic)
+## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.1.0-lightgrey.svg?style=plastic)
 
 
 #####Mods needed
@@ -7,6 +7,9 @@
 * [Exile](http://www.exilemod.com/)
 * [Zombies And Demons](http://steamcommunity.com/sharedfiles/filedetails/?id=501966277)
 * [RZ Infection](http://steamcommunity.com/sharedfiles/filedetails/?id=614815221)
+* [Advanced Rappelling](https://steamcommunity.com/sharedfiles/filedetails/?id=713709341)
+* [Advanced Urban Rappelling](https://steamcommunity.com/sharedfiles/filedetails/?id=730310357)
+* [Tanoa Tidesystem](https://steamcommunity.com/sharedfiles/filedetails/?id=914112746)
 * [InfiStar](http://infistar.de) (Recommended)(Not included)
 
 #####Script used
@@ -22,14 +25,17 @@
 
 #####Mod Folders
 ```
-@Exile				= Exile
-@ZombiesAndDemons	= Zombies And Demons
-@RZInfection		= RZInfection
+@Exile						= Exile
+@ZombiesAndDemons			= Zombies And Demons
+@RZInfection				= RZInfection
+@AdvancedRappelling			= Advanced Rappelling
+@AdvancedUrbanRappelling	= Advanced Urban Rappelling
+@TanoaTidesystem 			= Tanoa Tidesystem
 ```
 
 #####StartServer.bat
 ```
--mod=@Exile;@ExileServer;@ZombiesAndDemons;@RZInfection;
+-mod=@Exile;@ExileServer;@ZombiesAndDemons;@RZInfection;@AdvancedRappelling;@AdvancedUrbanRappelling;@TanoaTidesystem;
 ```
 
 #####Edit @ExileServer\config.cfg

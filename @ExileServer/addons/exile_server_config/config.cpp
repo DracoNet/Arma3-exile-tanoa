@@ -3946,7 +3946,9 @@ class CfgSettings
 			"Exile_Car_LandRover_Ambulance_Desert",
 			"Exile_Car_Tractor_Red",
 			"Exile_Car_OldTractor_Red",
-			"Exile_Car_Octavius_White"
+			"Exile_Car_Octavius_White",
+			"Exile_Car_MB4WD",
+			"Exile_Car_MB4WDOpen"
 		};
 
 		/**
@@ -4070,10 +4072,10 @@ class CfgSettings
 		*/
 
 		// This needs to match config.cfg serverCommandPassword
-		serverPassword = "";
+		serverPassword = "ChangeMe";
 
 		// Autolocks server until its ready to accept players
-		useAutoLock = 0;
+		useAutoLock = 1;
 
 		// Server will autoLock at that time before restart (minutes)
 		restartAutoLock = 3;
@@ -4086,7 +4088,7 @@ class CfgSettings
 			{4, 0} = Every 4 hours
 			{1, 30} = Every one and a half hour (who the hell would do this?)
 		*/
-		restartTimer[] = {3, 0};
+		restartTimer[] = {4, 0};
 
 		/*
 			Kicks players before restart to prevent gear loss.
@@ -4095,14 +4097,14 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useAutoKick = 0;
+		useAutoKick = 1;
 
 		/*
 			Number of minutes before the server kicks players that did
 			not disconnect before the restart. Should at least be two
 			minutes!
 		*/
-		kickTime = 2;
+		kickTime = 1;
 
 		/*
 			Self-explanatory

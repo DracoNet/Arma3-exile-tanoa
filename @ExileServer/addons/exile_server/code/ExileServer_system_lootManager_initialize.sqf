@@ -13,14 +13,14 @@ private["_lootTableName", "_lootTable", "_itemGroupName", "_items"];
 ExileServerBuildingNetIdsWithLoot = [];
 {
 	_lootTableName = configName _x;
-	_lootTable = getArray (configFile >> "CfgExileLootServer" >> "LootTables" >> _lootTableName);
+	_lootTable = getArray (configFile >> "CfgExileLoot" >> "LootTables" >> _lootTableName);
 	missionNamespace setVariable ["ExileCachedLootTable" + _lootTableName, _lootTable];
 }
-forEach (configProperties [configFile >> "CfgExileLootServer" >> "LootTables"]);
+forEach (configProperties [configFile >> "CfgExileLoot" >> "LootTables"]);
 {
 	_itemGroupName = configName _x;
-	_items = getArray (configFile >> "CfgExileLootServer" >> "ItemGroups" >> _itemGroupName);
+	_items = getArray (configFile >> "CfgExileLoot" >> "ItemGroups" >> _itemGroupName);
 	missionNamespace setVariable ["ExileCachedLootItemGroup" + _itemGroupName, _items];
 }
-forEach (configProperties [configFile >> "CfgExileLootServer" >> "ItemGroups"]);
+forEach (configProperties [configFile >> "CfgExileLoot" >> "ItemGroups"]);
 true

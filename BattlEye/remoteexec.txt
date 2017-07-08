@@ -1,0 +1,2 @@
+//regex
+7 "" !"bis_fnc_effectkilledsecondaries" !"bis_fnc_effectkilledairdestruction"
