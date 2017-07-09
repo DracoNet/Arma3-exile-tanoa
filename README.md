@@ -14,11 +14,13 @@
 
 #####Script used
 
-* [patrix87/ExileZ-2](https://github.com/patrix87/ExileZ-2)
+* [kuplion/ExileZ-2](https://github.com/kuplion/ExileZ-Mod)
 * [Defent/DMS_Exile](https://github.com/Defent/DMS_Exile)
 * [ACD_TB - ACiDy Tanoa Bridges](https://github.com/d4n1ch/acd_TB)
 * [CRE4MPIE/StatusBar](https://github.com/CRE4MPIE/StatusBar)
 * [IT07/ArmA3_exile_ServerInfoMenu](https://github.com/IT07/ArmA3_exile_ServerInfoMenu)
+* [BigFootCode/bigfoots-shipwrecks](https://github.com/bigfootcode/bigfoots-shipwrecks)
+* [SecondComing/a3_exile_occupation](https://github.com/secondcoming/a3_exile_occupation)
 * Draco Custom!!!
 
 ###Installing

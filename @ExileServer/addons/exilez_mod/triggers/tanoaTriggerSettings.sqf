@@ -24,7 +24,27 @@ Trigger_1 = [				 //Cities
 /* 16 Loot Box */            nil                 // The location of the Missionloot file related to that trigger *(See example file zmissionloot.sqf)
 ];
 
-Trigger_2 = [				 //Military
+Trigger_2 = [				 //MainCities
+/* 0  Use this trigger */    True,               
+/* 1  Trigger Positions */   MainCities,        
+/* 2  Max Zombies */         10,                 
+/* 3  Activation Delay */    15,                 
+/* 4  Spawn Delay */         15,                 
+/* 5  Respawn Delay */       60,                 
+/* 6  Show Trigger On Map */ true,               
+/* 7  Marker Color */        "ColorRed",         
+/* 8  MarkerBrush */         "Solid",            
+/* 9  Marker Alpha */        0.2,                
+/* 10 Marker Text */         "",                 
+/* 11 Vest group */          Basic,              
+/* 12 Loot group */          Useful,             
+/* 13 Zombie group */        MediumCiv,
+/* 14 Mission Radius */      0,                  
+/* 15 Mission SQF */         nil,                
+/* 16 Loot Box */            nil                 
+];
+
+Trigger_3 = [				 //Military
 /* 0  Use this trigger */    True,               
 /* 1  Trigger Positions */   Military,        
 /* 2  Max Zombies */         10,                 
@@ -44,7 +64,7 @@ Trigger_2 = [				 //Military
 /* 16 Loot Box */            nil                 
 ];
 
-Trigger_3 = [				 //No Buildings
+Trigger_4 = [				 //No Buildings
 /* 0  Use this trigger */    True,               
 /* 1  Trigger Positions */   NoBuildings,        
 /* 2  Max Zombies */         10,                 
@@ -64,7 +84,7 @@ Trigger_3 = [				 //No Buildings
 /* 16 Loot Box */            nil                 
 ];
 
-Trigger_4 = [				 //No Man Land
+Trigger_5 = [				 //No Man Land
 /* 0  Use this trigger */    True,               
 /* 1  Trigger Positions */   NoMansLand,       
 /* 2  Max Zombies */         10,                 
@@ -84,7 +104,7 @@ Trigger_4 = [				 //No Man Land
 /* 16 Loot Box */            nil                 
 ];
 
-Trigger_5 = [				 //Mission Trigger
+Trigger_6 = [				 //Mission Trigger
 /* 0  Use this trigger */    True,               
 /* 1  Trigger Positions */   Mission,            
 /* 2  Max Zombies */         15,                 
@@ -105,7 +125,7 @@ Trigger_5 = [				 //Mission Trigger
 ];
 
 // List all the trigger group to use here.
-Triggers = [Trigger_1,Trigger_2,Trigger_3,Trigger_4,Trigger_5];
+Triggers = [Trigger_1,Trigger_2,Trigger_3,Trigger_4,Trigger_5,Trigger_6];
 
 // Check Config Compiled
 EZM_SettingsCompiledOkay				= true;

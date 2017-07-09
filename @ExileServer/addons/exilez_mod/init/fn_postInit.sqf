@@ -288,6 +288,9 @@ TurnTheLightsOff = compileFinal preprocessFileLineNumbers "exilez_mod\scripts\Li
 // Compile the Zombie Monitor
 ZombieMonitor = compileFinal preprocessFileLineNumbers "exilez_mod\scripts\ZombieMonitor.sqf";
 
+// Compile the Dead Zombie Monitor
+DeadZombieMonitor = compileFinal preprocessFileLineNumbers "exilez_mod\scripts\DeadZombieMonitor.sqf";
+
 // Compile the Harassing Zombies Loop
 HarassingZombiesThread = compileFinal preprocessFileLineNumbers "exilez_mod\scripts\HarassingZombiesThread.sqf";
 
@@ -297,7 +300,7 @@ HordeThread = compileFinal preprocessFileLineNumbers "exilez_mod\scripts\HordeTh
 // Add Zombie Monitor to ExileServer Thread
 if (Debug) then
 {
-	[Maxtime/2, ZombieMonitor, [], true] call ExileServer_system_thread_addTask;
+	[MaxTime/2, ZombieMonitor, [], true] call ExileServer_system_thread_addTask;
 	diag_log "---------------------------------------------------------------------";
 	diag_log "---------------------------------------------------------------------";
 	diag_log "ExileZ Mod: Added Debug Zombie Monitor to ExileServer Thread";
@@ -306,10 +309,30 @@ if (Debug) then
 }
 else
 {
-	[Maxtime, ZombieMonitor, [], true] call ExileServer_system_thread_addTask;
+	[MaxTime, ZombieMonitor, [], true] call ExileServer_system_thread_addTask;
 	diag_log "---------------------------------------------------------------------";
 	diag_log "---------------------------------------------------------------------";
 	diag_log "ExileZ Mod: Added Zombie Monitor to ExileServer Thread";
+	diag_log "---------------------------------------------------------------------";
+	diag_log "---------------------------------------------------------------------";
+};
+
+// Add Dead Zombie Monitor to ExileServer Thread
+if (Debug) then
+{
+	[MaxTimeDead/4, DeadZombieMonitor, [], true] call ExileServer_system_thread_addTask;
+	diag_log "---------------------------------------------------------------------";
+	diag_log "---------------------------------------------------------------------";
+	diag_log "ExileZ Mod: Added Debug Dead Zombie Monitor to ExileServer Thread";
+	diag_log "---------------------------------------------------------------------";
+	diag_log "---------------------------------------------------------------------";
+}
+else
+{
+	[MaxTimeDead, DeadZombieMonitor, [], true] call ExileServer_system_thread_addTask;
+	diag_log "---------------------------------------------------------------------";
+	diag_log "---------------------------------------------------------------------";
+	diag_log "ExileZ Mod: Added Dead Zombie Monitor to ExileServer Thread";
 	diag_log "---------------------------------------------------------------------";
 	diag_log "---------------------------------------------------------------------";
 };
@@ -359,9 +382,6 @@ if (UseHorde) then
 		diag_log "---------------------------------------------------------------------";
 	};
 };
-	
-//Exile Vars
-MaxTerritoryRange = getNumber (missionConfigFile >> "CfgTerritories" >> "maximumRadius");
 
 //Create Triggers
 if (UseTriggers) then

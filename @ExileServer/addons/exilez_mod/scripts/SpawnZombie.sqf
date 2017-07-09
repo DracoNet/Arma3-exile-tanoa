@@ -22,7 +22,8 @@ if (Debug) then
 	diag_log format["ExileZ Mod: SpawnZombie: Group : %1 | Position : %2 | Vest : %3 | Loot : %4 | ZGroup : %5",_group,_position,_vestGroup,_lootGroup,_zombieGroup];
 };
 
-if (count _this == 7) then {
+if (count _this == 7) then
+{
 	_MaxSpawnDistance =    _this select 6;	
 }
 else
@@ -60,6 +61,7 @@ GetZombieClass =
 	{
 		diag_log format["ExileZ Mod: Randomly Selected Value : %1",_result];
 	};
+	
 	{
 		if((_x select 1) >= _result) exitwith
 		{

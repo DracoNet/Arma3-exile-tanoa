@@ -24,10 +24,10 @@ _validLocation = true;
 // Check if empty
 if ((count _position) == 0) then
 {
-	_validLocation = false
+	_validLocation = false;
 };
 
-// Check for water
+// Check for Water
 if (_validLocation) then 
 {
 	if (surfaceIsWater _position) then
@@ -36,39 +36,61 @@ if (_validLocation) then
 	};
 };
 
-// Check for safezones
+// Check for Blacklisted Areas
 if (_validLocation) then 
 {
-	if ((_position) call ExileClient_util_world_isInTraderZone) then
+	if (UseAreaBlackList) then
 	{
-		_validLocation = false
+		{
+			if (_position distance (_x select 0) <= _x select 1) then
+			{
+				_validLocation = false
+			};
+		}
+		forEach BlackListedPositions;
 	};
 };
 
-// Check for flags
+// Check for SafeZones
+if (_validLocation) then 
+{
+	if (RemoveZfromTraders) then
+	{
+		if ((_position) call ExileClient_util_world_isInTraderZone) then
+		{
+			_validLocation = false;
+		};
+	};
+};
+
+// Check for Flags
 if (_validLocation) then 
 {
 	if (RemoveZfromTerritory) then
 	{
-		_flags = _position nearObjects ["Exile_Construction_Flag_Static", MaxTerritoryRange];
+		if ((_position) call ExileClient_util_world_isInTerritory) then
 		{
-			_distance = (getPosATL _x) distance _position;
-			_radius = _x getVariable ["ExileTerritorySize", 0];
-			if (_distance <= _radius) exitWith {_validLocation = false};
-		}forEach _flags;
+			_validLocation = false;
+		};
 	};
 };
 
 // Check for players too close
 if (_validLocation && !_ignorePlayer) then 
 {
-	if ({isplayer _x} count (_position nearEntities MinSpawnDistance) == 1) then {_validLocation = false};
+	if ({isplayer _x} count (_position nearEntities MinSpawnDistance) == 1) then
+	{
+		_validLocation = false;
+	};
 };
 
 // Check for absence of players near
 if (_validLocation && !_ignorePlayer) then 
 {
-	if ({isplayer _x} count (_position nearEntities MaxSpawnDistance) == 0) then {_validLocation = false};
+	if ({isplayer _x} count (_position nearEntities MaxSpawnDistance) == 0) then
+	{
+		_validLocation = false;
+	};
 };
 
 

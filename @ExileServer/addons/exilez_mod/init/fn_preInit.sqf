@@ -74,6 +74,10 @@ if (isNil "EZM_CompiledOkay") exitWith
 EZM_aliveZombies = [];
 publicVariable "EZM_aliveZombies";
 
+// Create Dead Zombie Monitor
+EZM_deadZombies = [];
+publicVariable "EZM_deadZombies";
+
 // Compile World Trigger Positions
 switch (toLower worldName) do
 {

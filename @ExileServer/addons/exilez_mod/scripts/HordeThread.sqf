@@ -56,9 +56,9 @@ if (_nPlayer >= 1) then
 		sleep 0.05;
 	};
 	
-	//if _playerObj is not null spawn the horde
-	if !(isnull _playerObj) then 
-	{ 
+	//if _playerObj is not null or in a Trader, spawn the horde
+	if (!(isnull _playerObj) && !((getPosATL _playerObj) call ExileClient_util_world_isInTraderZone)) then 
+	{
 		_playerName = name _playerObj;
 		
 		//get group from player
@@ -74,7 +74,6 @@ if (_nPlayer >= 1) then
 		//Spawn the horde
 		if (ExtendedLogging) then 
 		{
-			
 			diag_log format["ExileZ Mod: Spawning The Horde near %1.",_playerName];
 		};
 		for "_i" from 1 to _groupSize do 
