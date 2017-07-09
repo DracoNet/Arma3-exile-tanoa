@@ -1645,6 +1645,16 @@ class CfgExileCustomCode
 
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
+	
+	// Kill Messages
+	ExileServer_object_player_event_onMpKilled = "custom\ImprovedKillFeed\ExileServer_object_player_event_onMpKilled.sqf";
+	
+	// Remove Range
+	ExileServer_util_getFragPerks = "custom\ImprovedKillFeed\ExileServer_util_getFragPerks.sqf";
+	
+	// 1.0.3 Hotfix
+	ExileServer_util_getFragKiller = "custom\ImprovedKillFeed\ExileServer_util_getFragKiller.sqf";
+	ExileServer_util_getFragType = "custom\ImprovedKillFeed\ExileServer_util_getFragType.sqf";
 };
 class CfgExileEnvironment
 {

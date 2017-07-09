@@ -1,5 +1,5 @@
 # Arma3-exile-tanoa
-## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.1.0-lightgrey.svg?style=plastic)
+## Arma3-exile ![Arma 1.72](https://img.shields.io/badge/Arma-1.72-blue.svg?style=plastic) ![Exile 1.0.3](https://img.shields.io/badge/Exile-1.0.3-C72651.svg?style=plastic) ![Build Version](https://img.shields.io/badge/Build_Version-1.1.1-green.svg?style=plastic)
 
 
 #####Mods needed
@@ -21,6 +21,7 @@
 * [IT07/ArmA3_exile_ServerInfoMenu](https://github.com/IT07/ArmA3_exile_ServerInfoMenu)
 * [BigFootCode/bigfoots-shipwrecks](https://github.com/bigfootcode/bigfoots-shipwrecks)
 * [SecondComing/a3_exile_occupation](https://github.com/secondcoming/a3_exile_occupation)
+* [kuplion/Improved-Killfeed](https://github.com/kuplion/Improved-Killfeed)
 * Draco Custom!!!
 
 ###Installing
