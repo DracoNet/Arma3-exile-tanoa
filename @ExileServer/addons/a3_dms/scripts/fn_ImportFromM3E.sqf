@@ -51,13 +51,10 @@ private _objs = _export apply
 {
 	// Create the object
 	private _obj = createVehicle [_x select 0, [0,0,0], [], 0, "CAN_COLLIDE"];
-	if(dynamicSimulationSystemEnabled)then
+
+	if (dynamicSimulationSystemEnabled) then
 	{
 		_obj enableDynamicSimulation true;
-	}
-	else
-	{
-		_obj enableSimulationGlobal false;
 	};
 
 	// Calculate the object's position using provided relative position

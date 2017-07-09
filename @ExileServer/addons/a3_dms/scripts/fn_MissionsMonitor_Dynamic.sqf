@@ -142,10 +142,7 @@
 			{
 				_x allowDamage true;
 				_x enableRopeAttach true;
-				if!(dynamicSimulationEnabled _x)then
-				{
-					_x enableSimulationGlobal true;
-				};
+				_x enableSimulationGlobal true;
 
 				if (_x getVariable ["ExileIsPersistent", false]) then
 				{
@@ -164,10 +161,8 @@
 				{
 					_x lock 1;
 				};
-				if!(dynamicSimulationEnabled _x)then
-				{
-					_x call ExileServer_system_simulationMonitor_addVehicle;
-				};
+
+				_x call ExileServer_system_simulationMonitor_addVehicle;
 			} forEach _vehs;
 
 			{
