@@ -30,7 +30,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -45,5 +46,10 @@ Icon
 # =========================
 # InfiStar AntiHack
 # =========================
-AH.sqf
-AHconfig.sqf
+a3_infiSTAR_Exile/
+a3_infiSTAR_Exile.pbo
+EXILE_AH.sqf
+EXILE_AT.sqf
+EXILE_AHAT_CONFIG.hpp
+infiSTAR_AdminMenu.hpp
+
